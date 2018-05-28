@@ -1,5 +1,7 @@
  #!/usr/bin/env python
 
+import sys
+sys.path.append("~/scripts/bandeco")
 with open('cardapio', 'r') as noisnafita:
     data=noisnafita.read()
 data1 = data

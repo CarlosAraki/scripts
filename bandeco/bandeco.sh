@@ -7,7 +7,7 @@ wget --tries=2 --connect-timeout=5 -q https://www.prefeitura.unicamp.br/apps/sit
 if [ -s cardapio ]; 
 	then
 	cat cardapio | sed -i '/PRINCIPAL/!d' cardapio 
-	python remove_all.py
+	python ~/scripts/bandeco/remove_all.py
 	rm cardapio
 
 
